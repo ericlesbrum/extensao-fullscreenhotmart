@@ -1,0 +1,39 @@
+.bg-full {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+}
+.bg-full .content-media {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.content-media {
+  position: relative;
+}
+.content-media:hover .btn-fullscreen {
+  opacity: 1;
+}
+.content-media .btn-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 10;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.content-media .btn-fullscreen:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+}/*# sourceMappingURL=style.css.map */
